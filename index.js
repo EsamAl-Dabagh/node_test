@@ -2,7 +2,6 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-// var session = require('express-sessions');
 var cookieParser = require("cookie-parser");
 var cookieSession = require("cookie-session");
 
@@ -15,7 +14,6 @@ app.use(cookieParser());
 app.use(cookieSession({
   secret: "makers-makers-makers"
 }));
-// app.use(session({secret: "makers-makers-makers"}));
 
 //define routes
 app.get("/", function (req, res) {
